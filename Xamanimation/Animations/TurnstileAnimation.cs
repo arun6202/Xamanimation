@@ -21,7 +21,16 @@
                 });
             });
         }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
 
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
         internal Animation TurnstileIn()
         {
             var animation = new Animation();
@@ -50,7 +59,16 @@
                 });
             });
         }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
 
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
         internal Animation TurnstileOut()
         {
             var animation = new Animation();

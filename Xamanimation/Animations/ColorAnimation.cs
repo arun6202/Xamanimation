@@ -34,5 +34,15 @@
                 });
             });
         }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
     }
 }

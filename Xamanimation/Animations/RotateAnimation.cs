@@ -26,6 +26,17 @@
 
             return Target.RotateTo(Rotation, Convert.ToUInt32(Duration), EasingHelper.GetEasing(Easing));
         }
+
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
     }
 
     public class RelRotateToAnimation : AnimationBase
@@ -48,6 +59,16 @@
             }
 
             return Target.RelRotateTo(Rotation, Convert.ToUInt32(Duration), EasingHelper.GetEasing(Easing));
+        }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
         }
     }
 
@@ -72,6 +93,16 @@
 
             return Target.RotateXTo(Rotation, Convert.ToUInt32(Duration), EasingHelper.GetEasing(Easing));
         }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
     }
 
     public class RotateYToAnimation : AnimationBase
@@ -94,6 +125,16 @@
             }
 
             return Target.RotateYTo(Rotation, Convert.ToUInt32(Duration), EasingHelper.GetEasing(Easing));
+        }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
         }
     }
 }

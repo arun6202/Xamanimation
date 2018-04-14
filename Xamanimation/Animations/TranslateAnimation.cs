@@ -36,5 +36,15 @@
 
             return Target.TranslateTo(TranslateX, TranslateY, Convert.ToUInt32(Duration), EasingHelper.GetEasing(Easing));
         }
+		protected override Task ResetAnimation()
+        {
+			throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+			throw new NotImplementedException();
+
+        }
     }
 }

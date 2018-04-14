@@ -26,6 +26,17 @@
 
             return Target.FadeTo(Opacity, Convert.ToUInt32(Duration), EasingHelper.GetEasing(Easing));
         }
+
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
     }
 
     public class FadeInAnimation : AnimationBase
@@ -61,7 +72,16 @@
                 });
             });
         }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
 
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
         internal Animation FadeIn()
         {
             var animation = new Animation();
@@ -110,7 +130,16 @@
                 });
             });
         }
+		protected override Task ResetAnimation()
+        {
+            throw new NotImplementedException();
+        }
 
+        protected override Task RepeatAnimation()
+        {
+            throw new NotImplementedException();
+
+        }
         internal Animation FadeOut()
         {
             var animation = new Animation();
